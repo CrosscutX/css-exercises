@@ -5,6 +5,8 @@ body {
   margin: 0;
   overflow: hidden;
   font-family: Roboto, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 img {
@@ -16,6 +18,7 @@ button {
   border: none;
   border-radius: 8px;
   background: #eee;
+  padding: 8px 16px;
 }
 
 input {
@@ -25,3 +28,37 @@ input {
   width: 400px;
   margin-bottom: 16px;
 }
+/*Stack the content on top of one another and center */
+.content{
+  display: flex;
+  flex: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*display the header and footer properly*/
+.header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.footer{
+  background: rgb(229, 229, 229)
+}
+/*Get rid of bullet points*/
+.left-links, .right-links {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/*Get rid of link underline,change text black*/
+a{
+  text-decoration: none;
+  color: black;
+}
+
